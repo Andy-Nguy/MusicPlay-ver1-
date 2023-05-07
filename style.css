@@ -20,9 +20,13 @@
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
   }
-  
 
-  
+  .nav{
+    position: relative;
+    background-color: rgba(9, 9, 9, 0.68);
+    height:24px;
+    width:100%;
+  }
   .player {
     position: none;
     max-width:40%;
@@ -49,10 +53,16 @@
     bottom: 0%;
     width: 100%;
     max-width: 80%;
-    left:12.5%;
+    left:39.5%;
     border-radius: 15px;
   }
-  
+  .content {
+    position: relative;
+    display: block;
+    right:0.5%;
+    width:76%;
+
+  }
   /* HEADER */
   header {
     text-align: center;
@@ -60,15 +70,15 @@
   }
   
   header h4 {
-    color: var(--primary-color);
-    font-size: 12px;
+    color: #d4a9b4;
+    font-size: 14px;
+    font-family: 'Coming Soon', cursive;
   }
-  
   header h2 {
-    color: var(--text-color);
-    font-size: 20px;
-    font-weight: 1000;
-  
+    color:#d9738f;
+    font-size: 26px;
+    font-weight: 800;
+    font-family: 'Lobster', cursive;
   }
   
   /* CD */
@@ -92,7 +102,7 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
-    background-color: #ebebeb;
+    background-color: rgba(117, 115, 115, 0.7);
     opacity: 0.6;
     margin-top: 6px;
     border-radius: 20px;
@@ -100,14 +110,14 @@
   }
   
   .control .btn {
-    color: #ec1f55;
+    color: #f0f0f0;
     padding: 16px;
     font-size: 19px;
     cursor: pointer;
   }
   
   .control .btn.active {
-    color: #f15f86;
+    color: #df5e81;
   }
   
   .control .btn-toggle-play {
@@ -116,7 +126,7 @@
    height: 27.5px;
    border-radius: 50%;
    font-size: 22px;
-   color: #7c7373;
+   color: #beb9b9;
    display: flex;
    bottom: 0px;
    align-items: center;
@@ -151,7 +161,7 @@
   
   /* PLAYLIST */
   .playlist {
-    margin-top: 50%;
+    margin-top: -1%;
       padding: 6px;
       position: relative;
   }
@@ -160,7 +170,7 @@
     display: flex;
     align-items:center;
     margin-bottom: 12px;
-    background-color:rgba(220, 215, 215, 0.002);
+    background-color:rgba(231, 225, 225, 0.002);
     padding: 8px 16px;
     border-radius: 5px;
     box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
@@ -195,12 +205,14 @@
   }
   
   .song .title {
-    font-size: 18px;
-    color: var(--text-color);
+    font-size: 24px;
+    font-family: 'Send Flowers', cursive;
+    color: rgba(246, 188, 202, 0.69);
   }
   
   .song .author {
     font-size: 12px;
+    display: none;
     color: #f7cfcf;
   }
   
@@ -221,11 +233,20 @@
   .content{
     display: block;
     position: relative;
-   margin-top: -13px;
-   margin-left: -14.5px;
-   margin-right: -14.5px;
+    margin-top: -1px;
+    width: 109%;
+    margin-left: -15px;
+    margin-right: -5px;
     background-color: rgba(75, 75, 75, 0.68);
     border-radius: 20px;
+  }
+  .nav{
+    position: relative;
+    background-color: rgb(9, 9, 9,0.87);
+    height: 15px;
+    width: 100%;
+    top: 0px;
+    z-index:4;
   }
   html {
     box-sizing: border-box;
@@ -272,13 +293,15 @@
   }
   
   header h4 {
-    color: var(--primary-color);
-    font-size: 12px;
+    color: #dd8198;
+    font-size: 14px;
+    font-family: 'Coming Soon', cursive;
   }
   
   header h2 {
-    color: var(--text-color);
-    font-size: 20px;
+    color:#e2adbc;
+    font-size: 22px;
+    font-family: 'Lobster', cursive;
   }
   
   /* CD */
@@ -330,7 +353,7 @@
     justify-content: center;
     box-shadow:  rgb(221, 221, 221) 0px 0px 0px, 0 0 0 5px #f15f86;
     position: relative;
-    z-index: 2;
+   
    }
   
    /*.control .btn-toggle-play::before{
@@ -368,10 +391,11 @@
   /* PLAYLIST */
   .playlist {
     position: absolute;
-    margin-top: 128px;
+    margin-top: 118px;
     padding: 12px;
-    z-index: 2;
-    border-radius: 26px;
+    width: 100%;
+    z-index: 1;
+    border-radius: 28px;
     opacity: 0.98;
   
   }
@@ -417,6 +441,7 @@
   .song .title {
     font-size: 18px;
     color: var(--text-color);
+    font-family: 'Send Flowers', cursive;
   }
   
   .song .author {
